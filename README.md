@@ -138,7 +138,7 @@ def dot_product(x,y):
 #  32  calculated as (1*4 + 2*5 + 3*6)
 ```
 
-So now we have the numerator of the formula all worked out, we should now be able to calculate covariance by calling these functions and dividing by n-1. 
+Now let’s build the co-variance function. Here we are taking the dot product of the variances of each element of height and weight. We then divide the result by the N-1 (the number of elements – 1 : the minus 1 is due to the fact we are dealing with sample data not population.
 
 Write a function `cov(var1, var2)` that would use the functions above to calculate the covariance of given variables, 
 
@@ -184,7 +184,6 @@ So we have another measurement known as correlation. A very basic correlation eq
 
 ![](correlation.png)
 
-Now let’s build the co-variance function. Here we are taking the dot product of the variances of each element of height and weight. We then divide the result by the N-1 (the number of elements – 1 : the minus 1 is due to the fact we are dealing with sample data not population.
 
 
 ```python
