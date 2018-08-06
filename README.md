@@ -213,7 +213,7 @@ sns.distplot(x)
 
 
 
-![png](output_9_1.png)
+![png](index_files/index_9_1.png)
 
 
 Both distributions, before and after the mean normalization appear the same, however, we can see the post mean normalization, the mean of distribution has centred as 0. 
@@ -254,7 +254,7 @@ dot_product(a,b)
 
 
 
-So now we have the numerator of the formula all worked out, we should now be able to calculate covariance by calling these functions and dividing by n-1. 
+Now let’s build the co-variance function. Here we are taking the dot product of the variances of each element of height and weight. We then divide the result by the N-1 (the number of elements – 1 : the minus 1 is due to the fact we are dealing with sample data not population.
 
 Write a function `cov(var1, var2)` that would use the functions above to calculate the covariance of given variables, 
 
@@ -354,8 +354,6 @@ Let's now move to correlation and calculate/verify it just like above.
 So we have another measurement known as correlation. A very basic correlation equation divides out the standard deviation of both height and weight. The result of a correlation is between 1 and -1. With -1 being perfect anti-correlation and 1 being perfect correlation. 0 mean no correlation exists.
 
 ![](correlation.png)
-
-Now let’s build the co-variance function. Here we are taking the dot product of the variances of each element of height and weight. We then divide the result by the N-1 (the number of elements – 1 : the minus 1 is due to the fact we are dealing with sample data not population.
 
 
 ```python
@@ -463,7 +461,7 @@ data.plot.scatter(x = 'weight', y = 'height')
 
 
 
-![png](output_24_1.png)
+![png](index_files/index_24_1.png)
 
 
 The graph above confirms our findings as we can see a liear relationship between weights and heights i.e. weight increases with increasing height and vice versa. 
@@ -484,7 +482,7 @@ print (corr(a,a), corr(a,b), corr(a,c), corr(a,d))
 ```
 
     1.0 0.09 -0.45 -1.0
-    
+
 
 ## Summary 
 
